@@ -31,3 +31,9 @@ jobs:
       with:
         name: python-script
         path: main.py
+        
+    - name: Upload executable
+      uses: actions/upload-artifact@v3
+      with:
+        name: python-executable
+        path: dist/main
